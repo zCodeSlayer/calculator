@@ -45,7 +45,3 @@ class CalculatorTest(unittest.TestCase):
         with self.assertRaises(ValueError) as e:
             calculator('a+b')
         self.assertEqual('Выражение должно содержать два целых числа и один знак (+-/*%)', e.exception.args[0])
-
-
-if __name__ == '__main__':
-    unittest.main()
