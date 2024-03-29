@@ -15,6 +15,9 @@ class CalculatorTest(unittest.TestCase):
     def test_devide(self):
         self.assertEqual(calculator('10/2'), 5)
 
+    def test_devide_wrong(self):
+        self.assertEqual(calculator('10/2'), 24)
+
     def test_mod(self):
         self.assertEqual(calculator('11%2'), 1)
 
